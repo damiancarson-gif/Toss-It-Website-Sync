@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Toss-It</title>
+    <meta name="description"
+        content="Owner-operated junk removal based in Whitby, serving all of Durham Region plus Scarborough and Markham. Text a photo, get a price and it's gone.">
+    <meta property="og:title" content="Toss-It | Junk Removal in Durham Region">
+    <meta property="og:description" content="Make room. Owner-operated junk removal, priced before anything moves.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dcremovalca.com/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://dcremovalca.com/">
+    <meta property="og:site_name" content="Toss-It">
+    <meta property="og:locale" content="en_CA">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://dcremovalca.com/">
+    <meta name="theme-color" content="#f6f2ea">
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Toss-It","description":"Owner-operated junk removal based in Whitby, serving Durham Region, Scarborough and Markham.","telephone":"+1-416-893-5253","url":"https://dcremovalca.com","image":"https://dcremovalca.com/img/og-image.jpg","logo":"https://dcremovalca.com/img/logo.png","priceRange":"$119+","areaServed":["Durham Region","Whitby","Ajax","Pickering","Oshawa","Clarington","Bowmanville","Courtice","Uxbridge","Port Perry","Scarborough","Markham"],"address":{"@type":"PostalAddress","addressLocality":"Whitby","addressRegion":"ON","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"18:00"}]}</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="top" id="top">
+        <div class="wrap hbar">
+       <a class="brand" href="#home" aria-label="Toss-It home">
+    <img src="./img/logo-full.png" alt="Toss-It Junk Removal">
+</a>
+            
+<nav class="main" id="nav" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#area">Service area</a>
+    <a href="#about">About</a>
+    <a href="#book">Book</a>
+</nav>
+
+            <a class="hcall" href="tel:+14168935253" data-tel data-phone>416-893-5253</a>
+            <a class="btn btn-dark hbook" href="#book">Book a pickup</a>
+            <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg width="26"
+                    height="26" viewBox="0 0 24 24">
+                    <path d="M3 8h18M3 16h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg></button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ================= HOME ================= -->
+        <div class="view" id="v-home">
+            <section class="hero" aria-label="Intro">
+                <div class="wrap">
+                    <div>
+                        <p class="eyebrow">Junk removal · Durham Region &amp; East GTA</p>
+                        <h1>Make<br><span class="nv">room.</span></h1>
+                        <p class="lede">Owner-operated junk removal. Text a photo, get a price and it's gone.</p>
+                        <div class="ctas"><a class="btn btn-dark" href="#book">Book a pickup</a><a class="btn btn-light"
+                                href="sms:+14168935253" data-sms>Text us a photo</a></div>
+                        <div class="trust"><span><svg viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>Owners on every job</span><span><svg viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>Price before we lift</span><span><svg viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>Same or next day</span></div>
+                    </div>
+                    <div class="visual">
+                        <div class="ba" id="ba">
+                            <img src="img/after.jpg" alt="The same garage, empty and swept" fetchpriority="high">
+                            <img class="before" src="img/before.jpg" alt="A garage packed with junk"
+                                fetchpriority="high">
+                            <div class="handle" aria-hidden="true"><span><svg viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M9 7l-5 5 5 5M15 7l5 5-5 5" />
+                                    </svg></span></div>
+                            <span class="lbl l">Before</span><span class="lbl r">After</span>
+                            <input type="range" id="baRange" min="0" max="100" value="55"
+                                aria-label="Slide to compare before and after">
+                        </div>
+                        <p class="bacap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4" />
+                            </svg>Drag to compare. This garage, cleared in one afternoon: <b>about $730</b></p>
+                    </div>
+                </div>
+            </section>
+
+            <section style="padding-top:30px">
+                <div class="wrap">
+                    <div class="shead">
+                        <h2>What we clear</h2><a class="link arrow" href="#services">All services</a>
+                    </div>
+                    <div class="tiles">
+                        <a class="tile" href="#residential">
+                            <div class="im"><img src="img/tile-homes.jpg" alt="" loading="lazy"></div>
+                            <div class="t">Homes<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                        <a class="tile" href="#commercial">
+                            <div class="im"><img src="img/tile-business.jpg" alt="" loading="lazy"></div>
+                            <div class="t">Businesses<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                        <a class="tile" href="#estate">
+                            <div class="im"><img src="img/tile-estate.jpg" alt="" loading="lazy"></div>
+                            <div class="t">Estate cleanouts<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                        <a class="tile" href="#garage">
+                            <div class="im"><img src="img/tile-garage.jpg" alt="" loading="lazy"></div>
+                            <div class="t">Garages &amp; basements<svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                        <a class="tile" href="#reno">
+                            <div class="im"><img src="img/tile-reno.jpg" alt="" loading="lazy"></div>
+                            <div class="t">Renovation debris<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                        <a class="tile" href="#partners">
+                            <div class="im"><img src="img/tile-condo.jpg" alt="" loading="lazy"></div>
+                            <div class="t">Property managers<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section style="padding-top:30px" id="how">
+                <div class="wrap howgrid">
+                    <div class="phone" aria-label="Example text conversation with Toss-It">
+                        <div class="screen">
+                            <div class="pbar">
+                                <div class="av"><img src="img/logo-mark.png" alt=""></div>
+                                <b>Toss-It</b><span>416-893-5253</span>
+                            </div>
+                            <div class="chat" id="chat"></div>
+                            <div class="pin">
+                                <div>Text message</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="shead">
+                            <div>
+                                <h2>A photo is all it takes</h2>
+                                <p class="sub">Text us a picture of what's going. You'll have a price back in minutes,
+                                    not a sales visit.</p>
+                            </div>
+                        </div>
+                        <ol class="hw">
+                            <li>
+                                <div><b>Send a photo</b><span>Text it, or use the booking form.</span></div>
+                            </li>
+                            <li>
+                                <div><b>Get your price</b><span>A real number, usually within the hour.</span></div>
+                            </li>
+                            <li>
+                                <div><b>We carry it out</b><span>Stairs, basements, backyards. Price confirmed on site
+                                        before we lift.</span></div>
+                            </li>
+                            <li>
+                                <div><b>Swept clean</b><span>Pay when it's done, by e-transfer or card.</span></div>
+                            </li>
+                        </ol>
+                        <div class="ctas"><a class="btn btn-dark" href="sms:+14168935253" data-sms>Text us a photo</a><a
+                                class="btn btn-light" href="#book">Book online</a></div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="padding-top:20px">
+                <div class="wrap">
+                    <div class="teaser">
+                        <div>
+                            <h2>Priced for your job, not off a chart</h2>
+                            <p class="sub">How much, where it sits, how far, and what it's made of. Every price includes
+                                loading, hauling and disposal.</p>
+                            <div class="acts"><a class="btn btn-dark" href="#pricing">See all pricing</a><a
+                                    class="btn btn-light" href="Toss-It-Price-Guide.pdf" target="_blank">Price guide
+                                    (PDF)</a></div>
+                        </div>
+                        <div class="nums" id="teaser-nums"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="padding-top:20px">
+                <div class="wrap">
+                    <div class="promises">
+                        <div>
+                            <h3>Owners on every job</h3>
+                            <p>Damian and Carson do the work themselves.</p>
+                        </div>
+                        <div>
+                            <h3>No surprise fees</h3>
+                            <p>The price we confirm on site is the price you pay.</p>
+                        </div>
+                        <div>
+                            <h3>Swept clean, or we come back</h3>
+                            <p>Floors protected, space swept, every time.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="padding-top:20px">
+                <div class="wrap">
+                    <div class="band">
+                        <div>
+                            <h2>Text a photo. Get a price in minutes.</h2>
+                            <p>Most quotes go out within the hour, and often the same day for pickup.</p>
+                        </div>
+                        <div class="ctas"><a class="btn btn-white" href="sms:+14168935253" data-sms>Text
+                                416-893-5253</a><a class="btn btn-ghostw" href="#book">Book online</a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= SERVICES ================= -->
+        <div class="view" id="v-services">
+            <section hidden>
+                <div class="wrap">
+                    <p class="crumb"><a href="#home">Home</a> / Services</p>
+                    <div class="show" style="margin-top:30px">
+                        <div>
+                            <div class="intro">
+                                <h2>What we clear</h2>
+                                <p>Nearly anything two people can carry, from a single armchair to a whole house.</p>
+                            </div>
+                            <ul class="svc-list" role="tablist" aria-label="Services" id="svcs"></ul>
+                        </div>
+                        <div class="stage">
+                            <div class="frame" id="frame"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="padding: top 7px;">
+                <div class="wrap">
+                    <div class="shead">
+                        <h2>What We Clear</h2>
+                        <p>Each one has its own page with what to expect and what it costs.</p>
+                    </div>
+                    <div class="tiles">
+                        <a class="tile" href="#estate">
+                            <div class="im"><img src="img/tile-estate.jpg" alt="" loading="lazy"></div>
+                            <div class="t">Clearing a parent's home<svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                        <a class="tile" href="#downsizing">
+                            
+<div class="im">
+    <img src="img/downsizing.jpg" alt="Downsizing cleanout" loading="lazy">
+</div>
+
+                            <div class="t">Downsizing<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                        <a class="tile" href="#garage">
+                            
+<div class="im">
+    <img src="img/storage.jpg" alt="Garage cleanout" loading="lazy">
+</div>
+
+                            <div class="t">Garage cleanout<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                        <a class="tile" href="#reno">
+                            <div class="im"><img src="img/tile-reno.jpg" alt="" loading="lazy"></div>
+                            <div class="t">Renovation debris<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                        <a class="tile" href="#commercial">
+                            
+<div class="im">
+    <img src="img/office-cleanout.jpg" alt="Office and retail cleanout" loading="lazy">
+</div>
+
+                            <div class="t">Offices &amp; retail<svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                        <a class="tile" href="#partners">
+                            
+<div class="im">
+    <img src="img/property-cleanout.jpg" alt="Property cleanout" loading="lazy">
+</div>
+
+                            <div class="t">Property managers &amp; realtors<svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg></div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section style="padding-top:0">
+                <div class="wrap">
+                    <div class="shead">
+                        <h2>The work</h2>
+                    </div>
+                    <div class="mosaic" id="mosaic"></div>
+                    <p class="foot-note">Representative photography. Our own job photos are being added as we go.</p>
+                </div>
+            </section>
+            <section style="padding-top:0">
+                <div class="wrap">
+                    <div class="band">
+                        <div>
+                            <h2>Not sure what you have?</h2>
+                            <p>Text a photo and we'll price it before you book.</p>
+                        </div>
+                        <div class="ctas"><a class="btn btn-white" href="sms:+14168935253" data-sms>Text a photo</a><a
+                                class="btn btn-ghostw" href="#pricing">See pricing</a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= PRICING ================= -->
+        <div class="view" id="v-pricing">
+            <section class="pricing-section" style="padding-top: 40px; padding-bottom: 65px;">
+                <div class="wrap">
+                    <p class="crumb"><a href="#home">Home</a> / Pricing</p>
+                    <div class="shead" style="margin-top:0;">
+                        <div>
+                            <h2>Priced for your job, not off a chart</h2>
+                            <p class="sub">Two owners, loading, hauling and disposal included. Plus HST. Jobs start at
+                                $119, and the price is confirmed on site before we lift.</p>
+                        </div><a class="btn btn-light" href="Toss-It-Price-Guide.pdf" target="_blank">Download price
+                            guide (PDF)</a>
+                    </div>
+                    <div class="factors" id="factors"></div>
+                    <div class="block" style="margin-top:60px">
+                        <div class="ph">
+                            <h3>What jobs like yours have cost</h3>
+                            <p>Real examples from our pricing. Yours will be quoted from your photo.</p>
+                        </div>
+                        <div class="ex" id="tiers"></div>
+                    </div>
+                    <p class="pnote">Text a photo and we'll price it for you before you book. Most quotes go out within
+                        the hour.</p>
+
+                    <div class="block">
+                        <div class="ph">
+                            <h3>Couches, starting prices</h3>
+                            <p>From the curb or main floor. Stairs and a long carry are added to your quote.</p>
+                        </div>
+                        <div class="couches" id="couches"></div>
+                        <p class="pnote" id="couchnote"></p>
+                    </div>
+                    <div class="block">
+                        <div class="ph">
+                            <h3>Special items, starting prices</h3>
+                            <p>Taken apart on site when they need to be. Final price depends on where it sits and how
+                                far we drive.</p>
+                        </div>
+                        <div class="specials" id="specials"></div>
+                    </div>
+                    <div class="pfoot">
+                        <div>
+                            <h3>Every price includes</h3>
+                            <ul class="inc">
+                                <li>Two owners doing the lifting</li>
+                                <li>Loading from anywhere in the home</li>
+                                <li>Hauling and licensed disposal</li>
+                                <li>Donation drop for usable items</li>
+                                <li>Floors protected, space swept</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Good to know</h3>
+                            <ul class="inc" id="extras"></ul>
+                        </div>
+                        <div class="pcta">
+                            <h3>Ready to book?</h3>
+                            <p>Send a photo for an exact price, or book a time now.</p><a class="btn btn-dark"
+                                href="#book">Book a pickup</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= SERVICE AREA ================= -->
+        <div class="view" id="v-area">
+            
+<section class="service-area-section">
+    <div class="wrap">
+
+        <p class="crumb">
+            <a href="#home">Home</a> / Service area
+        </p>
+
+        <div class="shead service-area-heading">
+            <div>
+                <span class="service-eyebrow">PROUDLY SERVING DURHAM REGION</span>
+                <h2>Durham Region and the East GTA</h2>
+                <p class="sub">
+                    Headquartered in Whitby, we serve the entire Durham Region —
+                    from Pickering through Clarington, including Uxbridge and Port Perry —
+                    as well as Scarborough and Markham.
+                </p>
+            </div>
+        </div>
+
+        <div class="area">
+
+            <div class="map">
+                <svg id="map" viewBox="0 0 640 520" role="img"
+                    aria-label="Map of the service area: Durham Region plus Scarborough and Markham">
+                </svg>
+            </div>
+
+            <div class="look">
+                <div class="service-checker-heading">
+                    
+                    <h3>Is your area covered?</h3>
+                    <p>Check whether we offer junk removal in your neighbourhood.</p>
+                </div>
+
+                <label for="town">Town or postal code</label>
+
+                <input
+                    class="field"
+                    id="town"
+                    list="towns"
+                    placeholder="e.g. Ajax, Oshawa, L1N..."
+                    autocomplete="off"
+                >
+
+                <datalist id="towns"></datalist>
+
+                <div class="res" id="tres" aria-live="polite">
+                    <span>Enter your town or the first three characters of your postal code.</span>
+                </div>
+
+                <div class="service-checker-footer">
+                    <span class="service-status-dot"></span>
+                    Locally based in Whitby, Ontario
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        </div>
+
+        <!-- ================= ABOUT ================= -->
+        <div class="view" id="v-about">
+            <section>
+                <div class="wrap">
+                    <p class="crumb"><a href="#home">Home</a> / About</p>
+                    <div class="owners" style="margin-top:30px">
+                        <div class="mono"><img src="img/logo-mark.png" alt="Toss-It logo mark"></div>
+                        <div>
+                            <h2>Two best friends. One truck and trailer.</h2>
+                            <p>Toss-It is a locally owned and operated junk removal business run by Damian and Carson. With our own truck and 10-foot dump trailer, we take pride in providing reliable, straightforward service you can count on. We believe in showing up on time, offering honest and transparent pricing, and treating every property with care and respect.
+
+<p></p>No call centres, no franchises, and no surprises. When you book with Toss-It, you're dealing directly with the owners, from your first message to the final cleanup..</p>
+                            <div class="sig">
+                                <div><b>Damian</b><span>Co-owner</span></div>
+                                <div><b>Carson</b><span>Co-owner</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="padding-top:0">
+                <div class="wrap">
+                    <div class="shead">
+                        <h2>Same volume pricing. Fewer middlemen.</h2>
+                        <p>We use the same volume pricing as the national brands, but the people who quote your job are
+                            the people who show up and do it.</p>
+                    </div>
+                    <div class="cmp" role="table" aria-label="Toss-It compared with a typical franchise">
+                        <div class="cmp-h" role="row"><span></span><span class="dc">Toss-It</span><span>Typical
+                                franchise</span></div>
+                        <div role="row"><span>Who you talk to</span><span class="dc">The owners, by text or
+                                call</span><span>A call centre</span></div>
+                        <div role="row"><span>Who shows up</span><span class="dc">Damian and Carson, every
+                                job</span><span>Whichever crew is free</span></div>
+                        <div role="row"><span>Getting a price</span><span class="dc">Text a photo, hear back within the
+                                hour</span><span>Often an on-site visit first</span></div>
+                        <div role="row"><span>What's in the price</span><span class="dc">Labour, hauling, disposal. No
+                                franchise fee</span><span>Franchise overhead built in</span></div>
+                        <div role="row"><span>If something's off</span><span class="dc">We come back and fix it
+                                ourselves</span><span>A ticket in a queue</span></div>
+                    </div>
+                </div>
+            </section>
+            <section style="padding-top:0">
+                <div class="wrap">
+                    <div class="shead">
+                        <h2>Questions</h2>
+                    </div>
+                    <div class="faq" id="faqs"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= BOOK ================= -->
+        <div class="view" id="v-book">
+            <section>
+                <div class="wrap">
+                    <p class="crumb"><a href="#home">Home</a> / Book</p>
+                    <div class="bgrid" style="margin-top:30px">
+                        <div class="side">
+                            <h2>Book a pickup</h2>
+                            <p style="margin-top:16px">Tell us what's going. A photo gets you the most accurate price,
+                                and most quotes go out within the hour.</p>
+                            <div class="cl">
+                                <div><small>Call or text</small><a href="tel:+14168935253" data-tel
+                                        data-phone>4168935253</a></div>
+                                <div><small>Email</small><a href="mailto:sales@toss-it.ca"
+                                        data-mail>sales@toss-it.ca</a></div>
+                              
+<div class="business-hours">
+    <div class="hours-heading">
+        <strong>Business Hours</strong>
+        <span class="status" id="ostat"></span>
+    </div>
+
+    <div class="hours-row">
+        <span>Monday – Friday</span>
+        <span>5 PM – 10 PM</span>
+    </div>
+
+    <div class="hours-row">
+        <span>Saturday</span>
+        <span>7 AM – 9 PM</span>
+    </div>
+
+    
+<div class="hours-row">
+    <span>Sunday</span>
+    <span>10 AM - 7 PM</span>
+</div>
+
+</div> <!-- Closes business-hours -->
+</div> <!-- Closes cl -->
+</div> <!-- Closes side -->
+
+<form class="q" name="estimate" method="POST"
+      data-netlify="true"
+      netlify-honeypot="company"
+      enctype="multipart/form-data"
+      id="qform">
+
+
+        <form class="q" name="estimate"
+
+                        <form class="q" name="estimate" method="POST" data-netlify="true" netlify-honeypot="company"
+                            enctype="multipart/form-data" id="qform">
+                            <input type="hidden" name="form-name" value="estimate">
+                            <input type="hidden" name="source" id="qsrc" value="site">
+                            <input type="hidden" name="promo" id="qpromo" value="">
+                            <input type="hidden" name="utm" id="qutm" value="">
+                            <p class="x"><label>Company <input name="company"></label></p>
+                            <label>Name<input name="name" id="f-name" required autocomplete="name"></label>
+                            <label>Phone<input name="phone" id="f-phone" type="tel" required autocomplete="tel"></label>
+                            <label>Email<input name="email" id="f-email" type="email" autocomplete="email"></label>
+                            <label>Postal code or town<input name="location" id="f-location" required></label>
+                            <label>Job<select name="job" id="qjob">
+                                    <option>Not sure yet</option>
+                                    <option>Couch or sectional</option>
+                                    <option>Furniture or mattresses</option>
+                                    <option>Appliances</option>
+                                    <option>Garage or basement cleanout</option>
+                                    <option>Estate cleanout</option>
+                                    <option>Renovation debris</option>
+                                    <option>Hot tub, pool table or piano</option>
+                                    <option>Shed, hot tub or yard</option>
+                                    <option>Office or retail</option>
+                                    <option>Tenant turnover</option>
+                                    <option>Pre-listing cleanout</option>
+                                    <option>Other</option>
+                                </select></label>
+                            <label>How much is going<select name="load" id="qload">
+                                    <option>Not sure</option>
+                                </select></label>
+                            <label>Preferred date<input name="date" id="f-date" type="date"></label>
+                            <label>Photo<input name="photo" id="f-photo" type="file" accept="image/*"></label>
+                            <label class="full">What needs to go<textarea name="details" id="f-details"
+                                    placeholder="Old sectional, two dressers, about ten boxes in the basement"></textarea></label>
+                            <label class="chk full"><input type="checkbox" name="consent" id="f-consent"
+                                    required><span>You can contact me about this quote. I've read the <a class="link"
+                                        href="#privacy">privacy policy</a>.</span></label>
+                            <div class="msg" id="qmsg" role="status"></div>
+                            <div class="full"><button class="btn btn-dark" type="submit">Request my quote</button></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="view" id="v-sector"></div>
+
+        <div class="view" id="v-privacy">
+            <section>
+                <div class="wrap prose">
+                    <p class="crumb"><a href="#home">Home</a> / Privacy</p>
+                    <h1 style="font-size:clamp(30px,4.5vw,54px);margin:16px 0 26px">Privacy policy</h1>
+                    <p>Last updated November 2026.</p>
+                    <h3>What we collect</h3>
+                    <p>Your name, phone, email, address or postal code, details about the items to remove and any photos
+                        you send.</p>
+                    <h3>Why</h3>
+                    <p>To quote, schedule and complete your job, to contact you about it and to keep the records tax law
+                        requires. We never sell your information.</p>
+                    <h3>Consent</h3>
+                    <p>Submitting our form or contacting us means you agree to these uses. Promotional messages only go
+                        out if you separately agree, and you can unsubscribe at any time.</p>
+                    <h3>Sharing</h3>
+                    <p>Only with our website host, our form provider and a payment processor if you pay electronically,
+                        unless the law requires otherwise.</p>
+                    <h3>Cookies, analytics and ads</h3>
+                    <p>This site may use the Meta Pixel and Google Analytics to measure visits and to show our ads to
+                        people who have visited. These tools use cookies and share browsing information, such as pages
+                        viewed and whether a quote request was sent, with Meta and Google. They never receive the
+                        contents of your quote request. You can block these cookies in your browser settings, and manage
+                        ad preferences in your Facebook and Google accounts.</p>
+                    <h3>Retention</h3>
+                    <p>Quote requests that don't become jobs are deleted within 12 months. Job and invoice records are
+                        kept as long as tax law requires.</p>
+                    <h3>Your rights</h3>
+                    <p>Under Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) you can ask
+                        to see, correct or withdraw consent for the information we hold. Email <a class="link"
+                            href="mailto:damian.carson@dcremovalca.com" data-mail>damian.carson@dcremovalca.com</a> and
+                        we'll respond within 30 days.</p>
+                    <h3>Photos</h3>
+                    <p>Photos you send are used only to quote your job. We ask before using any photo of your property
+                        in our marketing.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="fcols">
+                <div>
+                    <p>Owner-operated junk removal for homes and businesses across Durham Region and the East GTA.</p>
+                </div>
+                <div>
+                    <h4>Services</h4><a href="#residential">Homes</a><a href="#commercial">Businesses</a><a
+                        href="#partners">Property managers</a><a href="#pricing">Pricing</a>
+                </div>
+                <div>
+                    <h4>Situations</h4><a href="#estate">Estate cleanouts</a><a href="#downsizing">Downsizing</a><a
+                        href="#garage">Garage cleanouts</a><a href="#reno">Renovation debris</a>
+                </div>
+                <div>
+                    <h4>Company</h4><a href="#about">About</a><a href="#area">Service area</a><a href="#book">Book</a><a
+                        href="#privacy">Privacy</a>
+                </div>
+                <div>
+                    <h4>Contact</h4><a href="tel:+14168935253" data-tel data-phone>416-893-5253</a><a
+                        href="mailto:damian.carson@dcremovalca.com" data-mail>damian.carson@dcremovalca.com</a><a
+                        href="#" data-review>Google reviews</a>
+                </div>
+            </div>
+            
+<div class="flogo">
+    <span>Toss-It</span>
+</div>
+
+            <div class="legal"><span>© <span id="yr"></span> Toss-It · Based in Whitby, Ontario · Some photos are
+                    illustrative</span><a href="#privacy">Privacy policy</a></div>
+        </div>
+    </footer>
+
+    <nav class="mbar" aria-label="Quick actions"><a href="tel:+14168935253" data-tel><svg viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" />
+            </svg>Call</a><a href="sms:+14168935253" data-sms><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 5h16v11H9l-5 4z" />
+            </svg>Text a photo</a><a class="go" href="#book">Book</a></nav>
+
+    <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer"><button class="c"
+            aria-label="Close">×</button><button class="p" aria-label="Previous">‹</button>
+        <figure><img id="lbi" alt="">
+            <figcaption id="lbc"></figcaption>
+        </figure><button class="n" aria-label="Next">›</button>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
